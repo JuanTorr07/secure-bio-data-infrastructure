@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: secure-network-monitor
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: network-monitor
+  template:
+    metadata:
+      labels:
+        app: network-monitor
+    spec:
+      containers:
+      - name: monitor
+        image: juantorr07/bio-network-monitor:latest
+        imagePullPolicy: Always
