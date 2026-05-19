@@ -14,7 +14,7 @@ This project implements a Zero-Trust operational model using the following techn
 ## Project Phases (Work in Progress)
 - [x] **Phase 1:** Containerization of the data processing environment (Docker).
 - [x] **Phase 2:** Automated provisioning of a secure Virtual Private Cloud (AWS + Terraform).
-- [ ] **Phase 3:** Deployment of orchestration clusters with strict role-based access control (Kubernetes).
+- [x] **Phase 3:** Deployment of orchestration clusters with strict role-based access control (Kubernetes).
 - [ ] **Phase 4:** Implementation of internal monitoring and network anomaly detection.
 
 ## Objective

@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: secure-bio-processor-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: bio-processor
+        image: juantorr07/bio-data-processor:latest  
+        imagePullPolicy: Always
+      restartPolicy: Never
